@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
-WORKDIR /workspace/${localWorkspaceFolderBasename}
+# WORKDIR /workspace/${localWorkspaceFolderBasename}
 
 # Keep the container running
 CMD ["sleep", "infinity"]
