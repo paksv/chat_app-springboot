@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     git \
     curl \
     wget \
+    sudo \
 # Add other dependencies here
     && rm -rf /var/lib/apt/lists/*
 
