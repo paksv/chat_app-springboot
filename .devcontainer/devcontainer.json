@@ -7,7 +7,6 @@
   },
   "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/${localWorkspaceFolderBasename},type=bind,consistency=cached"
-  /*
     "features": {
       "ghcr.io/devcontainers/features/java:1": {
         "version": "17",
@@ -15,5 +14,4 @@
         "mavenVersion": "3.8.6"
       }
     }
-  */
 }
