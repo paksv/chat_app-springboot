@@ -1,0 +1,43 @@
+package in.tusharprabhu.chatapp.model;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class ChatMessageTest {
+
+    @Test
+    public void testChatMessageBuilder() {
+        // Test the builder pattern
+        String content = "Hello, World!";
+        String sender = "TestUser";
+        ChatMessage.MessageType type = ChatMessage.MessageType.CHAT;
+
+        ChatMessage message = ChatMessage.builder()
+                .content(content)
+                .sender(sender)
+                .type(type)
+                .build();
+
+        assertEquals(content, message.getContent());
+        assertEquals(sender, message.getSender());
+        assertEquals(type, message.getType());
+    }
+
+    @Test
+    public void testChatMessageSettersAndGetters() {
+        // Test setters and getters
+        ChatMessage message = new ChatMessage();
+        
+        String content = "Test Content";
+        String sender = "Test Sender";
+        ChatMessage.MessageType type = ChatMessage.MessageType.JOIN;
+        
+        message.setContent(content);
+        message.setSender(sender);
+        message.setType(type);
+        
+        assertEquals(content, message.getContent());
+        assertEquals(sender, message.getSender());
+        assertEquals(type, message.getType());
+    }
+}
