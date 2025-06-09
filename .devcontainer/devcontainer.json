@@ -5,11 +5,15 @@
     "dockerfile": "../Dockerfile",
     "context": ".."
   },
-  "features": {
-    "ghcr.io/devcontainers/features/java:1": {
-      "version": "17",
-      "installMaven": "true",
-      "mavenVersion": "3.8.6"
+  "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/${localWorkspaceFolderBasename},type=bind,consistency=cached"
+  /*
+    "features": {
+      "ghcr.io/devcontainers/features/java:1": {
+        "version": "17",
+        "installMaven": "true",
+        "mavenVersion": "3.8.6"
+      }
     }
-  }
+  */
 }
